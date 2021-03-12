@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIGN UP</title>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <style>
+      h1{color:rgb(201, 97, 97);
+      size: 500px;
+      margin: auto;
+      }
+      body{
+        align-content: center;
+        margin-top: 25mm;
+        text-align:center;
+        background-image: url('bc.jpg');
+        background-attachment: fixed;
+      background-size: cover;
+      }
+      button{
+          color: tomato;
+          background-color: palegreen;
+          border: none;
+      }
+    </style>   
+  </head>
+  <body onload="initialize()">
+
+    <h1>SIGNUP</h1><br>
+    <div class="form-group">
+        <label for="userName">Username</label><br>
+        <input type="text" id="username" placeholder="name">
+    </div><br><br>
+    <div class="form-group">
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" placeholder="email">
+    </div><br><br>
+    <div class="form-group">
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" placeholder="date of birth">
+    </div><br><br>
+    <div class="form-group">
+        <label for="place">Place of Birth</label><br>
+        <input type="text" id="place" placeholder="place of birth">
+    </div><br><br>
+    <div class="form-group">
+        <label for="password">Password</label><br>
+        <input type="password" id="password" placeholder="Enter Password">
+    </div><br><br>
+    <button type="button" id="button" onclick="signup()">Sign Up</button><br>
+    <p>Already have an account?<a href="index.html">login</a></p>
+    <script src="app.js"></script>     
+  </body>
+</html>

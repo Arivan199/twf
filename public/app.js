@@ -12,12 +12,22 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 }
+function register(){
+    var userId = firebase.auth().currentUser.uid;
+        const database=firebase.database();
+        database.ref('users/'+userId).set({
+            username:username,
+            Date_of_Birth: dob,
+            Place_of_Birth: pob
+        })
+}
 function signup(){
     var email=document.getElementById("email").value;
     var dob=document.getElementById("dob").value;
     var pob=document.getElementById("place").value;
     var password=document.getElementById("password").value;
     firebase.auth().createUserWithEmailAndPassword(email,password).then((success) => {   
+        register();
         window.location.replace("https://myproject-8d348.web.app/redirect.html");            
     }).catch((error) => {
     var errorCode = error.code;

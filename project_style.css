@@ -1,0 +1,63 @@
+body{
+    background: aquamarine;
+}
+p{
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer{
+    border-top: 5px solid rgb(82, 76, 76);
+    align-content: center;
+    margin-left: -20%;
+    
+}
+.head{
+    margin-top: 100px;
+}
+
+.meta{
+    height: 50px;
+}
+.card{
+    align-content: center;
+    margin: 3rem;
+}
+img{
+    width: 20px;
+}
+.description{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: bolder;
+}
+#desc{
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+}
+#title
+{
+  text-align: center;
+  font-size: 48px;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-weight: bold;
+}
+nav ul{
+margin-left: 10%;
+
+}
+
+.panel-content
+{
+	margin-left: 20%;
+	margin-top: 3%;
+	width: 75% ;
+	height: auto ;
+}
+
+nav{
+    height: 30px;
+}
